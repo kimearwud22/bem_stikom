@@ -30,7 +30,7 @@ export default async (req, res) => {
                 return res.status(400).json({ error: err.message });
             }
             const {visi,  misi } = req.body;
-            const image = req.file ? `/upload/${req.file.filename}` : req.body.image;
+            const image = req.file ? `/uploads/${req.file.filename}` : req.body.image;
             const id = req.query.id;
             const updateKabinet = await prisma.kabinet.update({
                 where: {

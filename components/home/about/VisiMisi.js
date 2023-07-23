@@ -1,6 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 
 export const VisiMisi = () => {
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  const getKabinet = () => {
+    fetch("/api/kabinet/all", {
+      method: "GET",
+    })
+      .then((response) => response.json())
+      .then((response) => {
+        setData(response.data);
+        setLoading(false);
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
+  useEffect(() => {
+    getKabinet();
+  }, []);
   return (
     <div>
       <section className="section section-lg bg-gray-100">
@@ -9,37 +30,34 @@ export const VisiMisi = () => {
             <div className="col-12">
               <h3 className="h-custom-1 f1">Kabinet</h3>
             </div>
-            <div className="col-md-6 col-lg-5 col-xl-3 wow fadeIn">
+            {data.length > 0 ? (
+              data.map((item, index) => (
+            <div key={index} className='row'>
+              <div className="col-md-6 col-lg-5 col-xl-3 wow fadeIn">
               <h4>Visi</h4>
               <p>
-                Menjadi organisasi yang dapat mengembangkan potensi diri dan
-                masyarakat melalui pendidikan dan pengembangan diri.
+                {item.visi}
               </p>
             </div>
             <div className="col-md-6 col-lg-5 col-xl-3 wow fadeIn">
               <h4>Misi</h4>
                 <ul className="">
                   <li>
-                    1. Menjadi wadah pengembangan diri dan masyarakat melalui
-                    pendidikan dan pengembangan diri.
-                  </li>
-                  <li>
-                    2. Menjadi wadah pengembangan diri dan masyarakat melalui
-                    pendidikan dan pengembangan diri.
-                  </li>
-                  <li>
-                    3. Menjadi wadah pengembangan diri dan masyarakat melalui
-                    pendidikan dan pengembangan diri.
+                    {item.misi}
                   </li>
                 </ul>
             </div>
             <div className="col-xl-4 wow fadeIn" data-wow-delay=".4s">
               <img
                 className="img-rounded"
-                src="/home/images/home-1-369x341.jpg"
+                src={item.image}
                 alt
               />
             </div>
+            </div>
+              )) ) : (
+                <div>Data Kosong</div>
+              )}
           </div>
         </div>
       </section>
