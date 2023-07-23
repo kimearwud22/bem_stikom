@@ -1,10 +1,10 @@
-import React from 'react'
+import Script from "next/script";
 
 export const Scripts = () => {
   return (
     <div>
-        {/* <script src="@/public/home/js/script.js" />
-        <script src="@/public/home/js/core.min.js" /> */}
+        <Script defer src="../../../home/js/core.min.js" />
+        <Script defer src="../../../home/js/script.js" />
     </div>
   )
 }

@@ -7,7 +7,7 @@ export const VisiMisi = () => {
         <div className="container">
           <div className="row row-50 justify-content-center justify-content-lg-between">
             <div className="col-12">
-              <h3 className="h-custom-1 f1">Kabiner Niskala Arutala</h3>
+              <h3 className="h-custom-1 f1">Kabinet</h3>
             </div>
             <div className="col-md-6 col-lg-5 col-xl-3 wow fadeIn">
               <h4>Visi</h4>

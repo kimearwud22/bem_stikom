@@ -8,7 +8,7 @@ export const config = {
   },
 };
  
-const upload = multer({
+const uploads = multer({
   storage: multer.diskStorage({
     destination: "./public/uploads",
     filename: (req, file, cb) => {
@@ -24,7 +24,7 @@ const upload = multer({
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
-    upload.single("image")(req, res, async (err) => {
+    uploads.single("image")(req, res, async (err) => {
       if (err) {
         return res.status(400).json({ error: err.message });
       }
