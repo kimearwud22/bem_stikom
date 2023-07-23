@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import React, { useState } from 'react';
 
 export default function Navbar({ activePath }) {
@@ -64,8 +65,8 @@ export default function Navbar({ activePath }) {
                   Home
                 </a>
               </li>
-              <li className={`nav-item${activePath === '/about.html' ? ' active' : ''}`}>
-                <a className="nav-link" href="/about.html" style={{ color: "black" }}>
+              <li className={`nav-item${activePath === '/home/about' ? ' active' : ''}`}>
+                <a className="nav-link" href="/home/about" style={{ color: "black" }}>
                   Tentang Kami
                 </a>
               </li>
