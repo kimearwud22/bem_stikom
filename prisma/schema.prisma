@@ -35,6 +35,26 @@ model Kabinet {
   updatedAt DateTime @default(now())
 }
 
+model Bem {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  image     String
+  name      String
+  jabatan   String
+  periode   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+}
+
+model Bems {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  image     String
+  name      String
+  jabatan   String
+  periode   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+}
+
 model Struktur {
   id        String   @id @default(auto()) @map("_id") @db.ObjectId
   image     String

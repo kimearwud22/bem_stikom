@@ -32,7 +32,7 @@ export default async (req, res) => {
             const {name,  jabatan, periode } = req.body;
             const image = req.file ? `/uploads/${req.file.filename}` : req.body.image;
             const id = req.query.id;
-            const updateStruktur = await prisma.struktur.update({
+            const updateStruktur = await prisma.ph.update({
                 where: {
                     id: id,
                 },

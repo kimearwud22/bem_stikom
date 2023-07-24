@@ -30,9 +30,9 @@ export default async (req, res) => {
                 return res.status(400).json({ error: err.message });
             }
             const {name,  jabatan, periode } = req.body;
-            const image = req.file ? `/uploads/${req.file.filename}` : req.body.image;
+            const image = req.file ? `/upload/${req.file.filename}` : req.body.image;
             const id = req.query.id;
-            const updateStruktur = await prisma.struktur.update({
+            const updateStruktur = await prisma.bems.update({
                 where: {
                     id: id,
                 },

@@ -1,14 +1,12 @@
 // import React from "react";
 import React, {useState, useEffect} from "react";
-import Bem from "./Bem";
-import Bems from "./Bems";
 
-export default function Struktur() {
+export default function Bems() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
   const getStruktur = () => {
-    fetch("/api/struktur/all", {
+    fetch("/api/bems/all", {
       method: "GET",
     })
       .then((response) => response.json())
@@ -31,19 +29,17 @@ export default function Struktur() {
     <>
       <div className="container py-2">
         <div className="card p-3">
-          <div className="row">
-            <div className="col-md-12 text-center mb-4">
-              <h2>Organizational Structure</h2>
-            </div>
+          <div className="col-md-12 text-center mb-4">
+            <h2>Kementrian </h2>
           </div>
-          <div className="row text-center">
+          <div className="row">
           {data.length > 0 ? (
               data.map((item, index) => (
             <div className="col-md-3 col-sm-6 text-center" key={index}>
               <div className="card mb-4 shadow">
                 <img
                   src={item.image}
-                  alt="CEO"
+                  alt="CFO"
                   className="card-img-top rounded-circle"
                   style={{ maxWidth: "150px" }}
                 />
@@ -52,20 +48,18 @@ export default function Struktur() {
                   <p className="card-text">
                     {item.name}
                   </p>
-                  <p className="card-text">
+                    <p className="card-text">   
                     {item.periode}
-                  </p>
+                    </p>
                 </div>
               </div>
             </div>
-            )) ) : (
-              <div>Data Kosong</div>
-            )}
+                        )) ) : (
+                            <div>Data Kosong</div>
+                          )}
           </div>
-          <Bem />
         </div>
       </div>
-      <Bems/>
     </>
   );
 }
