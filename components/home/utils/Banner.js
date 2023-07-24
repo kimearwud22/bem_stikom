@@ -4,8 +4,8 @@ export default function Banner() {
   const bannerStyle = {
     position: "relative",
     width: "100%",
-    height: "600px", /* Set the desired height of the banner */
-    backgroundColor: "#f6f6f6", /* Fallback background color */
+    height: "600px", 
+    backgroundColor: "#f6f6f6", 
   };
 
   const bannerContentStyle = {
@@ -17,6 +17,7 @@ export default function Banner() {
     height: "100%",
     color: "#fff",
     textAlign: "center",
+    paddingTop: "250px",
   };
 
   const h6Style = {
@@ -64,7 +65,8 @@ export default function Banner() {
         data.map((item, index) => (
           <div
             key={index}
-            className="banner-image"
+          >
+            <div className="banner-image"
             style={{
               position: "absolute",
               top: 0,
@@ -74,37 +76,26 @@ export default function Banner() {
               backgroundImage: `url("http://localhost:3000${item.image}")`,
               backgroundSize: "cover",
               backgroundPosition: "center",
-              opacity: "90%",
+              opacity: "100%",
               filter: "brightness(50%)",
-            }}
-          >
+            }}/>
             <div className="banner-content" style={bannerContentStyle}>
               <h6 style={h6Style}>Badan Eksekutive Mahasiswa</h6>
               <h2 style={h2Style}>
                 Sekolah Tinggi Ilmu Komputer PGRI{" "}
                 <span className="text-italic font-weight-bold">Banyuwangi</span>
               </h2>
-              {/* <div className="button-block" style={buttonBlockStyle}>
-                <a className="button button-primary-gradient" href="#">
-                  <span>Selengkapnya</span>
-                </a>
-              </div> */}
             </div>
           </div>
         ))
       ) : (
-        <div className="banner-image" style={bannerImageStyle}>
+        <div className="banner-image">
           <div className="banner-content" style={bannerContentStyle}>
             <h6 style={h6Style}>Badan Eksekutive Mahasiswa</h6>
             <h2 style={h2Style}>
               Sekolah Tinggi Ilmu Komputer PGRI{" "}
               <span className="text-italic font-weight-bold">Banyuwangi</span>
             </h2>
-            <div className="button-block" style={buttonBlockStyle}>
-              <a className="button button-primary-gradient" href="#">
-                <span>Selengkapnya</span>
-              </a>
-            </div>
           </div>
         </div>
       )}

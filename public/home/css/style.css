@@ -18,6 +18,8 @@ button {
 	-webkit-appearance: none;
 }
 
+
+
 button::-moz-focus-inner {
 	border: none;
 	padding: 0;
@@ -501,7 +503,7 @@ a[href*='tel'], a[href*='mailto'] {
 }
 
 .link-press {
-	color: #ff8c16;
+	color: #ff8c16; 
 }
 
 .privacy-link {
@@ -3219,7 +3221,7 @@ textarea.form-input {
 	color: #828590;
 }
 
-.post-minimal-title {
+.post-minimal-title { 
 	color: #29293a;
 	letter-spacing: .01em;
 	font-weight: 400;

@@ -31,11 +31,10 @@ export default function Navbar({ activePath }) {
         style={{ padding: "10px 0", boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)" }}
       >
         <div className="container">
-          {/* RD Navbar Brand */}
           <a className="navbar-brand" href="/">
             <div style={logoContainerStyle}>
               <img
-                src="../../../home/images/logo-ukm/bem.jpg"
+                src="../../../home/images/logo-ukm/bem.png"
                 alt="Brand Logo"
                 style={logoStyle}
                 className="brand-logo-light"
@@ -45,8 +44,6 @@ export default function Navbar({ activePath }) {
               </h3>
             </div>
           </a>
-
-          {/* RD Navbar Toggle */}
           <button
             className={`navbar-toggler${collapsed ? ' collapsed' : ''}`}
             type="button"
@@ -59,24 +56,23 @@ export default function Navbar({ activePath }) {
           </button>
 
           <div className={`collapse navbar-collapse rd-navbar-nav-wrap${collapsed ? '' : ' show'}`} id="rd-navbar-nav-wrap">
-            {/* RD Navbar Nav */}
             <ul className="navbar-nav ml-auto">
-              <li className={`nav-item${activePath === '/' ? ' active' : ''}`}>
-                <Link className="nav-link" href="/" style={{ color: "black" }}>
+              <li >
+                <Link className="nav-link " href="/" style={{ color: "black" }}>
                   Home
                 </Link>
               </li>
-              <li className={`nav-item${activePath === '/home/about' ? ' active' : ''}`}>
+              <li >
                 <Link className="nav-link" href="/home/about" style={{ color: "black" }}>
                   Tentang Kami
                 </Link>
               </li>
-              <li className={`nav-item${activePath === '/home/ukm' ? ' active' : ''}`}>
+              <li >
                 <Link className="nav-link" href="/home/ukm" style={{ color: "black" }}>
                   UKM
                 </Link>
               </li>
-              <li className={`nav-item${activePath === '/contacts.html' ? ' active' : ''}`}>
+              <li >
                 <Link className="nav-link" href="/contacts.html" style={{ color: "black" }}>
                   Contacts
                 </Link>
