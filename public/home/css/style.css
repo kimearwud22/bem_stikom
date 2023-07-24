@@ -4625,7 +4625,7 @@ a.thumbnail-thin {
 .breadcrumbs-custom {
 	position: relative;
 	overflow: hidden;
-	background: url("../images/breadcrumbs-bg.jpg") center;
+	background: url("../../uploads/bannerukm.JPG") center; 
 	background-size: cover;
 }
 

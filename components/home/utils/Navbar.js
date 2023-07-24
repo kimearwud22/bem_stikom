@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 export default function Navbar({ activePath }) {
@@ -61,24 +62,24 @@ export default function Navbar({ activePath }) {
             {/* RD Navbar Nav */}
             <ul className="navbar-nav ml-auto">
               <li className={`nav-item${activePath === '/' ? ' active' : ''}`}>
-                <a className="nav-link" href="/" style={{ color: "black" }}>
+                <Link className="nav-link" href="/" style={{ color: "black" }}>
                   Home
-                </a>
+                </Link>
               </li>
               <li className={`nav-item${activePath === '/home/about' ? ' active' : ''}`}>
-                <a className="nav-link" href="/home/about" style={{ color: "black" }}>
+                <Link className="nav-link" href="/home/about" style={{ color: "black" }}>
                   Tentang Kami
-                </a>
+                </Link>
               </li>
-              <li className={`nav-item${activePath === '/typography.html' ? ' active' : ''}`}>
-                <a className="nav-link" href="/typography.html" style={{ color: "black" }}>
+              <li className={`nav-item${activePath === '/home/ukm' ? ' active' : ''}`}>
+                <Link className="nav-link" href="/home/ukm" style={{ color: "black" }}>
                   UKM
-                </a>
+                </Link>
               </li>
               <li className={`nav-item${activePath === '/contacts.html' ? ' active' : ''}`}>
-                <a className="nav-link" href="/contacts.html" style={{ color: "black" }}>
+                <Link className="nav-link" href="/contacts.html" style={{ color: "black" }}>
                   Contacts
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
