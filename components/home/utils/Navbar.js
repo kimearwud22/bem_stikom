@@ -27,8 +27,8 @@ export default function Navbar({ activePath }) {
   return (
     <>
       <nav
-        className={`navbar navbar-expand-lg navbar-light bg-light fixed-top${collapsed ? '' : ' show'}`}
-        style={{ padding: "10px 0", boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)" }}
+        className={`navbar navbar-expand-lg navbar-light bg-white fixed-top${collapsed ? '' : ' show'}`}
+        style={{ padding: "10px 0", boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",  }}
       >
         <div className="container">
           <a className="navbar-brand" href="/">

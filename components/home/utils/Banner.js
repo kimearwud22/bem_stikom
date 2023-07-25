@@ -26,7 +26,7 @@ export default function Banner() {
   };
 
   const h2Style = {
-    fontSize: "36px",
+    fontSize: "25px",
     marginBottom: "20px",
   };
 
@@ -81,10 +81,10 @@ export default function Banner() {
             }}/>
             <div className="banner-content" style={bannerContentStyle}>
               <h6 style={h6Style}>Badan Eksekutive Mahasiswa</h6>
-              <h2 style={h2Style}>
+              <h6 style={h2Style}>
                 Sekolah Tinggi Ilmu Komputer PGRI{" "}
                 <span className="text-italic font-weight-bold">Banyuwangi</span>
-              </h2>
+              </h6>
             </div>
           </div>
         ))

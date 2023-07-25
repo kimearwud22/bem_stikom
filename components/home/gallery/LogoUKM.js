@@ -4,7 +4,7 @@ import React from "react";
 export const LogoUKM = () => {
   return (
     <>
-      <section id="clients" className="section-bg">
+      <section id="clients" className="section-bg bg-default">
         <div className="container">
           <div className="section-header">
             <h3>Logo UKM</h3>
