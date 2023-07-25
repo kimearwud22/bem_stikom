@@ -11,17 +11,16 @@ export const Footer = () => {
                 <div className="col-6 col-md-3 col-lg-12">
                   <article className="counter-minimal">
                     <div className="counter-minimal-counter">
-                      <div className="counter">97</div>
-                      <span className="counter-postfix">%</span>
+                      <div className="counter">Sekolah Tinggi Ilmu Komputer PGRI Banyuwangi</div>
                     </div>
-                    <p className="counter-minimal-title">Graduates</p>
+                    {/* <p className="counter-minimal-title"></p> */}
                   </article>
                 </div>
                 {/* Add other counter articles here */}
               </div>
             </div>
             <div className="col-sm-6 col-lg-4 col-xl-5">
-              <h3>Twitter Feed</h3>
+              <h4>@Bemstikombwi & @stikombwi </h4>
               {/* Add Twitter Feed articles here */}
             </div>
             <div className="col-sm-6 col-lg-5 col-xl-4">
@@ -29,20 +28,16 @@ export const Footer = () => {
                 <div className="col-12">
                   <h3>About Us</h3>
                   <p>
-                    Since 1990, our college provides students with high-quality
-                    professional education. Together with us, you will have
-                    deeper knowledge of the subjects important for your future
-                    profession.
+                  STIKOM BANYUWANGI merupakan kampus TI yang terlengkap di Banyuwangi. STIKOM BANYUWANGI memiliki Gedung Berlantai 3 dengan fasilitas - fasilitas yang sangat memadai untuk dunia IT. Dan sampai saat ini STIKOM terus menerus melakukan perubahan yang lebih baik dan mencetak lulusan - lulusan terbaik agar sesuai semboyan STIKOM BANYUWANGI
                   </p>
                 </div>
-                <div className="col-12">
+                {/* <div className="col-12">
                   <h3>Newsletter</h3>
                   <p>
                     Keep up with our weekly news and updates on education.
                     Enter your e-mail and subscribe to our newsletter.
                   </p>
-                  {/* Add Newsletter form here */}
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -55,11 +50,11 @@ export const Footer = () => {
             <span>&copy;&nbsp;</span>
             <span className="copyright-year"></span>
             <span>&nbsp;</span>
-            <span>All Rights Reserved.</span>
+            <span>copyright.</span>
             <span>&nbsp;</span>
             <br className="d-sm-none" />
-            <a href="#">Terms of Use</a>
-            <span> and</span>
+            <a href="#">Menkominfo 2022-2023</a>
+            {/* <span> and</span> */}
             <span>&nbsp;</span>
             {/* <a href="#">Privacy Policy</a>. Design&nbsp;by&nbsp;
             <a href="https://www.templatemonster.com/">TemplateMonster</a> */}

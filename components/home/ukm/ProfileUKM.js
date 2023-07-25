@@ -63,7 +63,7 @@ export default function ProfileUKM() {
               className="shadow-1-strong"
             />
           </div>
-          <h5 className="mb-3">Belum Isi</h5>
+          <h5 className="mb-3">Media Digital Stikom</h5>
           <h5 className="mb-3">&#123;JURNALISTIK&#125;</h5>
           <h6 className="text-primary mb-3">Web Developer</h6>
           <p className="px-xl-3">
