@@ -89,6 +89,14 @@ export default function Sidebar() {
             </a>
           </li>
           <li className="nav-item menu-items">
+            <a className="nav-link" href="/admin/clasik">
+              <span className="menu-icon">
+                <i className="mdi mdi-laptop" />
+              </span>
+              <span className="menu-title">Basic Element</span>
+            </a>
+          </li>
+          {/* <li className="nav-item menu-items">
             <a
               className="nav-link"
               data-toggle="collapse"
@@ -99,7 +107,7 @@ export default function Sidebar() {
               <span className="menu-icon">
                 <i className="mdi mdi-laptop" />
               </span>
-              <span className="menu-title">Basic UI Elements</span>
+              <span className="menu-title">Basic Elements</span>
               <i className="menu-arrow" />
             </a>
             <div className="collapse" id="ui-basic">
@@ -130,13 +138,13 @@ export default function Sidebar() {
                 </li>
               </ul>
             </div>
-          </li>
+          </li> */}
           <li className="nav-item menu-items">
-            <a className="nav-link" href="pages/forms/basic_elements.html">
+            <a className="nav-link" href="/admin/struktur">
               <span className="menu-icon">
                 <i className="mdi mdi-playlist-play" />
               </span>
-              <span className="menu-title">Form Elements</span>
+              <span className="menu-title">Kabinet</span>
             </a>
           </li>
           <li className="nav-item menu-items">
@@ -147,7 +155,7 @@ export default function Sidebar() {
               <span className="menu-title">Tables</span>
             </a>
           </li>
-          <li className="nav-item menu-items">
+          {/* <li className="nav-item menu-items">
             <a className="nav-link" href="pages/charts/chartjs.html">
               <span className="menu-icon">
                 <i className="mdi mdi-chart-bar" />
@@ -216,7 +224,7 @@ export default function Sidebar() {
                 </li>
               </ul>
             </div>
-          </li>
+          </li> */}
           <li className="nav-item menu-items">
             <a
               className="nav-link"
