@@ -30,7 +30,7 @@ export default function Bem() {
       <div className="container py-2">
         <div className="card p-3">
 
-          <div className="row">
+          <div className="row rounded">
           {data.length > 0 ? (
               data.map((item, index) => (
             <div className="col-md-3 col-sm-6 text-center" key={index}>
@@ -38,15 +38,15 @@ export default function Bem() {
                 <img
                   src={item.image}
                   alt="CFO"
-                  className="card-img-top rounded-circle"
-                  style={{ maxWidth: "150px" }}
+                  className="w-auto rounded-top"
+                  style={{ maxWidth: "" }}
                 />
-                <div className="card-body">
-                  <h3 className="card-title">{item.jabatan}</h3>
-                  <p className="card-text">
+                <div className="">
+                  <h4 className="">{item.jabatan}</h4>
+                  <p className="">
                     {item.name}
                   </p>
-                  <p className="card-text">
+                  <p className="">
                     {item.periode}
                   </p>
                 </div>

@@ -34,9 +34,9 @@ export default function Struktur() {
           <div className="row">
             <div className="col-md-12 text-center mb-4">
               <h2>Organizational Structure</h2>
-            </div>
+            </div>  
           </div>
-          <div className="row text-center">
+          <div className="row text-center d-flex justify-content-center rounded">
           {data.length > 0 ? (
               data.map((item, index) => (
             <div className="col-md-3 col-sm-6 text-center" key={index}>
@@ -44,15 +44,15 @@ export default function Struktur() {
                 <img
                   src={item.image}
                   alt="CEO"
-                  className="card-img-top rounded-circle"
-                  style={{ maxWidth: "150px" }}
+                  className="w-auto rounded-top"
+                  style={{ maxWidth: "" }}
                 />
-                <div className="card-body">
-                  <h3 className="card-title">{item.jabatan}</h3>
-                  <p className="card-text">
+                <div className="">
+                  <h3 className="">{item.jabatan}</h3>
+                  <p className="">
                     {item.name}
                   </p>
-                  <p className="card-text">
+                  <p className="">
                     {item.periode}
                   </p>
                 </div>
