@@ -38,11 +38,11 @@ export default function Bem() {
                 <img
                   src={item.image}
                   alt="CFO"
-                  className="card-img-top rounded-circle"
-                  style={{ maxWidth: "150px" }}
+                  className="card-img-top rounded"
+                  style={{ maxWidth: "250px" }}
                 />
                 <div className="card-body">
-                  <h3 className="card-title">{item.jabatan}</h3>
+                  <h3 className="card-title text-secondary">{item.jabatan}</h3>
                   <p className="card-text">
                     {item.name}
                   </p>

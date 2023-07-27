@@ -114,6 +114,43 @@ export default function ProfileUKM() {
             </p>
           </div>
         </div>
+      <div className="d-flex text-center">
+          <div className="col-md-4 mb-5 mb-md-0">
+            <div className="d-flex justify-content-center mb-4" style={{width:"auto", height:"100px"}}>
+              <img
+                src="/home/images/logo-ukm/SMS.png"
+                className="shadow-1-strong"
+              />
+            </div>
+            <h5 className="mb-3">Belum Isi</h5>
+            <h5 className="mb-3">&#123;SMS&#125;</h5>
+            <h6 className="text-primary mb-3">Web Developer</h6>
+            <p className="px-xl-3">
+              <i className="pe-2 " />
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos
+              id officiis hic tenetur quae quaerat ad velit ab hic tenetur.
+            </p>
+          </div>
+          <div className="col-md-4 mb-5 mb-md-0">
+            
+          </div>
+          <div className="col-md-4 mb-5 mb-md-0">
+            <div className="d-flex justify-content-center mb-4" style={{width:"auto", height:"100px"}}>
+              <img
+                src="/home/images/logo-ukm/RPG.png"
+                className="shadow-1-strong"
+              />
+            </div>
+            <h5 className="mb-3">Belum Isi</h5>
+            <h5 className="mb-3">&#123;RPG&#125;</h5>
+            <h6 className="text-primary mb-3">Web Developer</h6>
+            <p className="px-xl-3">
+              <i className="pe-2 " />
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos
+              id officiis hic tenetur quae quaerat ad velit ab hic tenetur.
+            </p>
+          </div>
+        </div>
 
       {/* <div className="row text-center">
           <div className="col-md-4 mb-5 mb-md-0">
