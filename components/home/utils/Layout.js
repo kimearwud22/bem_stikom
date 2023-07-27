@@ -13,7 +13,7 @@ export default function Layout({ children }) {
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* <link rel="shortcut icon" href="/dist/img/logo/logos.png" /> */}
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/home/image/logo-ukm/bem.png" />
       </Head>
       <div id="app">
         <Navbar/>

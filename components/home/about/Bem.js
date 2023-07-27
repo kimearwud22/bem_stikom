@@ -38,12 +38,21 @@ export default function Bem() {
                 <img
                   src={item.image}
                   alt="CFO"
+<<<<<<< HEAD
                   className="w-auto rounded-top"
                   style={{ maxWidth: "" }}
                 />
                 <div className="">
                   <h4 className="">{item.jabatan}</h4>
                   <p className="">
+=======
+                  className="card-img-top rounded"
+                  style={{ maxWidth: "250px" }}
+                />
+                <div className="card-body">
+                  <h3 className="card-title text-secondary">{item.jabatan}</h3>
+                  <p className="card-text">
+>>>>>>> 7039882fa1c96d305e5d33dea0afd0a92cb3682c
                     {item.name}
                   </p>
                   <p className="">
